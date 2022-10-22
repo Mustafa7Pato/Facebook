@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--font-awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <!--style-->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style2.css" />
+    <title>Create Account</title>
+  </head>
+  <body>
+    <div
+      class="sign-up row d-flex justify-content-center align-content-center px-lg-5"
+    >
+      <div class="content col-lg-6 col-10 ms-4 mb-3">
+        <div class="header row justify-content-center">Create Account</div>
+
+        <form class="data">
+          <div class="name d-flex">
+            <label>
+              First Name :
+              <input type="text" required placeholder="Enter Your First Name" />
+            </label>
+            <label>
+              last Name :
+              <input type="text" required placeholder="Enter Your last Name" />
+            </label>
+          </div>
+          <div class="name d-flex">
+            <label>
+              Email :
+              <input
+                type="email"
+                required
+                placeholder="Enter Your Email Address"
+              />
+            </label>
+            <label>
+              Phone Number :
+              <input
+                type="text"
+                required
+                placeholder="Enter Your Phone Number"
+              />
+            </label>
+          </div>
+          <div class="name d-flex">
+            <label>
+              Password :
+              <input
+                type="password"
+                required
+                placeholder="Enter Your Password"
+              />
+            </label>
+            <label>
+              Confirm Password :
+              <input
+                type="password"
+                required
+                placeholder="Confirm Your Password"
+              />
+            </label>
+          </div>
+          <div class="name d-flex">
+            <label>
+              Gender:
+              <div class="mg">
+                <label for="male"
+                  ><input type="radio" name="gender" id="male" /> Male</label
+                >
+              </div>
+              <div class="mg">
+                <label for="female"
+                  ><input type="radio" name="gender" id="female" />
+                  Female</label
+                >
+              </div>
+            </label>
+            <label>
+              Birthrates :
+              <p></p>
+              <input type="date" required />
+            </label>
+          </div>
+          <div class="submit">
+            <input type="reset" value="Reset" class="btn" />
+            <input type="submit" class="btn" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--bootstrap-library-->
+    <script src="Js/popper.js"></script>
+    <script src="Js/bootstrap.js"></script>
+  </body>
+</html>
