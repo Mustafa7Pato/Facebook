@@ -132,4 +132,10 @@ a:hover {
     font-size: 11px;
   }
 }
+@media screen and (max-width:600px) {
+  
+  .panel{
+    margin-left: 1em;
+  }
+}
 /*End Page one*/
