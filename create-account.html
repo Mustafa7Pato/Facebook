@@ -20,74 +20,85 @@
       <div class="content col-lg-6 col-10 ms-4 mb-3">
         <div class="header row justify-content-center">Create Account</div>
 
-        <form class="data">
+        <form class="data" action="index.html" onsubmit="return validation()">
+          <!--start name validation-->
           <div class="name d-flex">
-            <label>
-              First Name :
-              <input type="text" required placeholder="Enter Your First Name" />
+            <label >
+              <span class="firstNameLabel">First Name :</span>
+              <input type="text" class="firstName"  placeholder="Enter Your First Name" />
             </label>
-            <label>
-              last Name :
-              <input type="text" required placeholder="Enter Your last Name" />
+            <label >
+              <span class="lastNameLabel">last Name :</span>
+              <input type="text" class="lastName"  placeholder="Enter Your last Name" />
             </label>
           </div>
+          <!--end name validation-->
           <div class="name d-flex">
-            <label>
-              Email :
+            <!-- Email validation-->
+            <label >
+              <span class="emailLabel">Email :</span>
               <input
-                type="email"
-                required
+                type="text"
+                class="email"
                 placeholder="Enter Your Email Address"
               />
             </label>
-            <label>
-              Phone Number :
+            <!--Phone Number validation-->
+            <label >
+              <span class="phoneNumberLabel">Phone Number :</span>
               <input
                 type="text"
-                required
+                class="phoneNumber"
                 placeholder="Enter Your Phone Number"
               />
             </label>
           </div>
           <div class="name d-flex">
-            <label>
-              Password :
+            <!--Password validation-->
+            <label >
+              <span class="passwordLabel">Password :</span>
               <input
                 type="password"
-                required
+                class="password"
+                
                 placeholder="Enter Your Password"
               />
             </label>
-            <label>
-              Confirm Password :
+            <label >
+              <span class="confirmPasswordLabel">Confirm Password :</span>
               <input
                 type="password"
-                required
+                class="confirmPassword"
                 placeholder="Confirm Your Password"
               />
             </label>
           </div>
           <div class="name d-flex">
-            <label>
-              Gender:
+            <!--Gender validation-->
+            <label  >
+              <span class="genderLabel">Gender:</span>
               <div class="mg">
-                <label for="male"
-                  ><input type="radio" name="gender" id="male" /> Male</label
+                <!--male -->
+                <label for="male" class="maleLabel"
+                  ><input type="radio" name="gender" id="male"  /> Male</label
                 >
               </div>
               <div class="mg">
-                <label for="female"
+                <!--female-->
+                <label for="female" class="femaleLabel"
                   ><input type="radio" name="gender" id="female" />
                   Female</label
                 >
               </div>
             </label>
-            <label>
-              Birthrates :
+            <!--date validation-->
+            <label >
+            <span class="dateLabel">  Birthrates :</span>
               <p></p>
-              <input type="date" required />
+              <input type="date"  class="date" />
             </label>
           </div>
+          <!--end validation-->
           <div class="submit">
             <input type="reset" value="Reset" class="btn" />
             <input type="submit" class="btn" />
@@ -98,5 +109,6 @@
     <!--bootstrap-library-->
     <script src="Js/popper.js"></script>
     <script src="Js/bootstrap.js"></script>
+    <script src="Js/main.js"></script>
   </body>
 </html>

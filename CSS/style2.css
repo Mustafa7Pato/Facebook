@@ -88,3 +88,6 @@ input::placeholder {
     flex-direction: column;
   }
 }
+.red{
+  color: red;
+}
